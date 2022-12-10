@@ -1,0 +1,51 @@
+.fruits {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+.fruits-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 2rem;
+}
+.fruits-header > h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.fruit-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.fruit-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 5px var(--transparentG);
+    background: var(--transparentG);
+}
+.fruit-card > h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.fruit-card > p {
+    font-weight: 300;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.card-footer > span,
+.card-footer > a > button {
+    font-size: 1rem;
+    font-weight: 500;
+}

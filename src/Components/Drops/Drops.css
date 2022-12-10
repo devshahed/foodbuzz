@@ -1,0 +1,20 @@
+.drop {
+    position: fixed;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--green);
+    filter: blur(10rem);
+    box-shadow: 0 0 20rem var(--green);
+    z-index: -1;
+}
+.drop:nth-of-type(1) {
+    height: 10rem;
+    width: 10rem;
+    top: 0;
+    left: 0;
+}
+.drop:nth-of-type(2) {
+    bottom: 0;
+    right: 0;
+}

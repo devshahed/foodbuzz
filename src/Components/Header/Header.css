@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--transparentG);
+    border-bottom: 1px solid var(--transparentG);
+    backdrop-filter: blur(2rem);
+}
+.logo {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo > h3 {
+    color: white;
+    transition: ease-in-out 0.3s;
+    font-size: 1.5rem;
+}
+.logo > img {
+    width: 2.4rem;
+}
+.nav {
+    list-style: none;
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: ease-in-out 0.3s;
+}
+.nav > li > a:hover {
+    color: var(--green);
+    text-shadow: 0 0 1rem var(--green);
+}
+.about {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+}
+.about > img {
+    cursor: pointer;
+}
