@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Assests/images/logo.png";
 import Button from "../Button/Button";
-import ThemeToggle from "../../Assests/mode.svg";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 const Header = () => {
