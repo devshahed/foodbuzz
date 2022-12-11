@@ -1,11 +1,119 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import Orange from "../../Assests/images/orange.png";
 import Drops from "../Drops/Drops";
 import "./Fruits.css";
+import { v4 as uuidv4 } from "uuid";
 
 const Fruits = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        setData([
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+            {
+                id: uuidv4(),
+                title: "Title",
+                desc: "desc",
+                price: "20$",
+            },
+        ]);
+    }, []);
     return (
         <div className="fruits">
             <Drops />
@@ -17,182 +125,19 @@ const Fruits = () => {
                 </p>
             </div>
             <div className="fruit-cards">
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
+                {data.map((fruits) => (
+                    <div key={fruits.id} className="fruit-card">
+                        <h4>{fruits.title}</h4>
+                        <p>{fruits.desc}</p>
+                        <img src={Orange} alt="cardImg" />
+                        <div className="card-footer">
+                            <span>{fruits.price}</span>
+                            <Link to="/cart">
+                                <Button text="Buy" />
+                            </Link>
+                        </div>
                     </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
-                <div className="fruit-card">
-                    <h4>Best Fresh Orange</h4>
-                    <p>
-                        but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you need to be
-                    </p>
-                    <img src={Orange} alt="cardImg" />
-                    <div className="card-footer">
-                        <span>27$</span>
-                        <Link to="/cart">
-                            <Button text="Buy" />
-                        </Link>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
